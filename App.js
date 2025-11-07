@@ -6,7 +6,15 @@ const heading = React.createElement(
     },
     "Hello, world from React!"
 );
-const child = React.createElement("div", { id: "child" }, heading);
+
+const smallerHeading = React.createElement(
+    "h3",
+    {
+        id: "smallerHeading"
+    },
+    "This is a smaller heading" 
+);
+const child = React.createElement("div", { id: "child" }, [heading, smallerHeading]);
 const parent = React.createElement("div", { id: "parent" }, child);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

@@ -1,6 +1,9 @@
 #heading {
     color: red;
 }
+#smallerHeading {
+    color: orange;
+}
 
 #parent {
     border-style: solid;
@@ -13,4 +16,5 @@
     border-width: 2px;
     border-color: green;
     margin: 5px;
+    text-align: center;
 }
