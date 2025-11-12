@@ -1,8 +1,11 @@
+import React from "react";
+import ReactDOM from "react-dom/client";
 const heading = React.createElement(
     "h1",
     {
         id: "heading", 
-        xyz: "something random" // custom attribute can also be provide 
+        xyz: "something random", // custom attribute can also be provide
+        key: "uniqueKey1" 
     },
     "Hello, world from React!"
 );
@@ -10,7 +13,8 @@ const heading = React.createElement(
 const smallerHeading = React.createElement(
     "h3",
     {
-        id: "smallerHeading"
+        id: "smallerHeading",
+        key: "uniqueKey2"
     },
     "This is a smaller heading" 
 );
