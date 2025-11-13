@@ -5,7 +5,7 @@ import ReactDOM from "react-dom/client";
 
 // JSX -> HTML/XML like syntax
 // Babel Transpiler -> Transpile JSX to React.createElement() calls - present as part of parcel bundler
-const heading = <h1 id = "heading">Namaste React 🚗</h1> ; 
+const heading = <h1 id = "heading" className="headingClass">Namaste React 🚗</h1> ; 
 
 
 
