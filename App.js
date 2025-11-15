@@ -15,6 +15,8 @@ const HeadingComponent = () => {
   return (
     <>
       {Title()}
+      <Title />
+      <Title></Title>
       {number + 100}
       <h1> This is a heading from a component </h1>
     </>
