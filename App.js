@@ -14,8 +14,8 @@ const Title = () => <h1> This is a title from a component </h1>;
 const HeadingComponent = () => {
   return (
     <>
-      <Title />
-      {number}
+      {Title()}
+      {number + 100}
       <h1> This is a heading from a component </h1>
     </>
   );
