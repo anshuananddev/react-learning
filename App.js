@@ -9,12 +9,13 @@ const heading = (
   </h1>
 );
 // React Functional Component
-
+const number = 100;
 const Title = () => <h1> This is a title from a component </h1>;
 const HeadingComponent = () => {
   return (
     <>
       <Title />
+      {number}
       <h1> This is a heading from a component </h1>
     </>
   );
