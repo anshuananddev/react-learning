@@ -20,4 +20,4 @@ const HeadingComponent = () => {
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 console.log(heading);
-root.render(HeadingComponent());
+root.render(<HeadingComponent />);
