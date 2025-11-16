@@ -1,29 +1,50 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-// JSX -> HTML/XML like syntax
-// Babel Transpiler -> Transpile JSX to React.createElement() calls - present as part of parcel bundler
-const heading = (
-  <h1 id="heading" className="headingClass">
-    Namaste React 🚗
-  </h1>
-);
-// React Functional Component
-const number = 100;
-const Title = () => <h1> This is a title from a component </h1>;
-const HeadingComponent = () => {
-  return (
-    <>
-      {Title()}
-      <Title />
-      <Title></Title>
-      {number + 100}
-      <h1> This is a heading from a component </h1>
-    </>
-  );
-};
+const Header = () => {
+    return (
+        <div className="header">
+            <div className="logo-container"> 
+                <img className="logo" src="https://cdn.dribbble.com/userupload/14683000/file/original-a9a8ef8e6c89a6a25ae297b21245680c.jpg?resize=1024x768&vertical=center"/>
+            </div>
+            <div className="nav-items">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                    <li>Cart</li>
+                </ul>
+            </div>
+        </div>
+    )
+}
+
+const RestaurantCard = () => {
+    return (
+        <div className="res-card">
+            <h3>Meghna Foods</h3>
+        </div>
+    )
+}
+
+const Body = () => {
+    return (
+        <div className="body">
+            <div className="search">Search</div>
+            <RestaurantCard />
+        </div>
+    )
+}
+
+const AppLayout = () => {
+    return (
+        <div className="app">
+            <Header />
+            <Body />
+        </div>
+    )
+}
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-console.log(heading);
-root.render(<HeadingComponent />);
+root.render(<AppLayout />);

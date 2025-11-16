@@ -1,20 +1,36 @@
-#heading {
-    color: red;
-}
-#smallerHeading {
-    color: orange;
-}
-
-#parent {
-    border-style: solid;
-    border-width: 2px;
-    border-color: blue;
+.header {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+  /* align-items: center; */
 }
 
-#child {
-    border-style: solid;
-    border-width: 2px;
-    border-color: green;
-    margin: 5px;
-    text-align: center;
+.logo {
+  width: 70px;
+  height: 70px;
+  display: block;
+  border-radius: 60%;
 }
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+}
+
+.nav-items > ul {
+    display: flex;
+    list-style-type: none
+}
+
+.nav-items > ul > li {
+    padding: 10px;
+    margin: 10px;
+}
+
+.res-card {
+    width:200px ;
+    height: 300px;
+    border: 1px solid black;
+}
+
